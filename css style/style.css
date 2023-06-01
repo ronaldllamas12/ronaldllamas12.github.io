@@ -5,8 +5,8 @@
 
 h1 {
     margin: 50px 40px;
-    color: red;
-    text-shadow: 5px 5px 5px rgba(239, 255, 14, 0.664);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 15px 10px rgb(0, 0, 0);
     font-size: 45px;
 }
 
@@ -18,87 +18,95 @@ p {
 }
 
 body {
-    width: 1350px;
+    width: 208vh;
     margin: 0;
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(56, 55, 55);
 }
 
 header {
-    background-image: linear-gradient(green, yellow, red);
+    background: rgb(0, 0, 0);
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
 }
 
 header .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px 40px;
 }
 
-header .logo {
+header .logo img {
+    width: 80px;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 10px 10px 15px black;
+    border-radius: none;
+    box-shadow: 0 5px 10px rgb(189, 178, 178);
     align-items: center;
 }
 
-#cabecera .logo:hover {
+header .logo:hover {
     transform: scale(1.1);
     filter: contrast(120%);
 }
 
 header .navegacion {
-    display: flex;
-
+    display: contents;
+    height: 100%;
+    background-color: blue;
 }
 
 .navegacion a {
-    padding: 0 30px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 1, 1);
+    font-weight: bold;
     font-size: 30px;
+    padding: 0 40px;
+    text-shadow: 0 5px 5px rgb(255, 255, 255);
 }
+
 
 .navegacion a:hover {
     transform: scale(1.05);
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.349);
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 5px 5px rgb(255, 5, 5);
 }
 
 header button {
-    font-size: 20px;
-    color: rgb(8, 8, 8);
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    background-color: black;
+    border: none;
     font-weight: bold;
-    background-image: linear-gradient(green, yellow, red);
     border-radius: 25px;
     padding: 15px 15px;
+    text-shadow: 0 5px 5px rgb(255, 255, 255);
 
 }
 
 header button:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 15px;
+    box-shadow: 0 0 15px;
 }
 
 header button:active {
-    box-shadow: inset -5px 5px 10px;
+    box-shadow: inset 2px -5px 10px;
 }
 
 .contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    padding-bottom: 10px;
 }
 
 .contenido img {
     height: 400px;
     border-radius: 25px;
     filter: contrast(120%);
-    padding: 10px;
+    box-shadow: 0 10px 15px black;
+
 }
 
 .biografia {
@@ -148,7 +156,7 @@ cite {
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
-    box-shadow: 5px 5px 10px green, 10px 10px 20px yellow, 15px 15px 30px red;
+    box-shadow: 0 0 15px rgb(7, 7, 7);
 
 
 
@@ -170,10 +178,9 @@ cite {
 }
 
 video {
-
-
-    border-radius: 50px;
-    box-shadow: 10px 10px 10px rgba(154, 255, 22, 0.753), 15px 15px 15px rgba(255, 0, 0, 0.699);
+    height: 100%;
+    box-shadow: 10px 10px 10px black);
+    width: 80%;
 
 }
 
@@ -203,26 +210,27 @@ footer {
     color: rgb(255, 255, 255);
     font-weight: bold;
     letter-spacing: 4px;
-    background: linear-gradient(90deg, transparent, rgb(0, 247, 123), rgb(26, 109, 15));
+    background: linear-gradient(90deg, transparent, rgb(255, 0, 0), rgb(173, 4, 4));
     border-radius: 5px;
 }
 
 footer a:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px rgb(75, 255, 30), 0 0 10px rgb(75, 255, 30), 0 0 20px rgb(75, 255, 30);
-    background-color: rgb(75, 255, 30);
+    box-shadow: 0 0 5px rgb(255, 5, 5), 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
     scale: 1.15;
+    text-shadow: 0 10px 5px black;
 }
 
 footer a:active {
-    box-shadow: inset 10px 10px 10px rgb(75, 255, 30);
+    box-shadow: inset 10px 10px 10px rgb(255, 2, 2);
     color: rgb(214, 240, 209);
 }
 
 footer p {
-    color: red;
+    color: rgb(255, 255, 255);
     justify-content: end;
-    text-shadow: 5px 5px 5px rgba(137, 138, 121, 0.664);
+    text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.664);
 }
 
 html {
